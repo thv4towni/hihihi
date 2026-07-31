@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#ffd6e5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    overflow:hidden;
+    font-family:"Courier New", Courier, monospace;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.gif{
+    width:300px;
+    height:auto;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+h1{
+    font-family:"Great Vibes", cursive;
+    font-size:65px;
+    color:#ff4f9a;
+    margin-bottom:10px;
+}
+
+.question{
+    font-size:22px;
+    margin-bottom:35px;
+}
+
+.btn-container{
+    position:relative;
+    width:420px;
+    height:180px;
+    margin:auto;
+}
+
+button{
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:18px;
+    font-family:"Courier New", Courier, monospace;
+    transition:.25s;
+}
+
+/* YES button stays centered */
+#yesBtn{
+    background:#ff4f9a;
+    color:white;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-110%, -50%);
+}
+
+#yesBtn:hover{
+    transform:translate(-110%, -50%) scale(1.08);
+}
+
+/* NO button starts beside YES */
+#noBtn{
+    background:#777;
+    color:white;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(20%, -50%);
+}
